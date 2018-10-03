@@ -1,0 +1,11 @@
+version: 'v13'
+services:
+  spring-boot-jpa-app:
+    image: myfirstacr1.azurecr.io/test11
+    container_name: test11
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 8077:8080
+    
